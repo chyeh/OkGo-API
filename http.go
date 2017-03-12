@@ -85,6 +85,7 @@ func getAttractions(
 		PlaceID string `mvc:"query[place_id]"`
 	},
 ) mvc.OutputBody {
+	logger.Debugln("[/attractions] got place_id:", p.PlaceID)
 	return mvc.JsonOutputBody(GetAttractions(p.PlaceID))
 }
 
@@ -95,5 +96,8 @@ func getHotelsForAttractions(
 		PlaceIDs string `mvc:"query[place_ids]"`
 	},
 ) mvc.OutputBody {
+	logger.Debugln("[/attractions/hotels] got checkin:", p.Checkin)
+	logger.Debugln("[/attractions/hotels] got checkout:", p.Checkout)
+	logger.Debugln("[/attractions/hotels] got place_ids:", p.PlaceIDs)
 	return mvc.JsonOutputBody(GetHotelsForAttractions(p.Checkin, p.Checkout, p.PlaceIDs))
 }
