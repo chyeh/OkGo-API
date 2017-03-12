@@ -1,0 +1,18 @@
+{
+	"restful" : {
+		"listen" : {
+			"host": "0.0.0.0",
+			"port": 8080
+		}
+	},
+	"logLevel" : {
+		"ROOT" : "DEBUG"
+	},
+	"api_auth" : {
+		"booking_dot_com" :{
+		 "username": "username",
+		 "password": "password"
+	 },
+		"google_place": "get-your-own-key"
+	}
+}
