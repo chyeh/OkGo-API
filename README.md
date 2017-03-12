@@ -22,7 +22,7 @@ This API module provide APIs with parameters:
 
 	`checkout`: A date in this format: `2017-08-07`
 
-# Run
+# Get and build the code
 
 1. Get and build the code
 
@@ -57,10 +57,17 @@ Take a look at `cfg.example.json`:
 }
 ```
 
-3. Run
+# Run
+
+If you are in the working directory:
 
 ```shell
 ./OkGo-API
+```
+
+If not, use `-c` to specify the path of the configuration file
+```shell
+<PATH>/<TO>/OkGo-API -c <PATH>/<TO>/OkGo-API
 ```
 
 # Test
