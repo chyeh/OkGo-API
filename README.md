@@ -24,7 +24,7 @@ This API module provide APIs with parameters:
 
 # Get and build the code
 
-1. Get and build the code
+Get and build the code
 
 ```shell
 go get github.com/chyeh/OkGo-API
@@ -32,9 +32,7 @@ cd $GOPATH/src/github.com/chyeh/OkGo-API
 go build
 ```
 
-2. Create the configuration file `cfg.json`
-
-Take a look at `cfg.example.json`:
+Create the configuration file `cfg.json`. Take a look at `cfg.example.json`:
 
 ```json
 {
