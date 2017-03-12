@@ -17,6 +17,8 @@ type Hotel struct {
 	Price             string   `json:"price"`
 	HotelCurrencyCode string   `json:"hotel_currency_code"`
 	Location          Location `json:"location"`
+	Stars             float32  `json:"stars"`
+	HotelName         string   `json:"hotel_name"`
 }
 
 type Location struct {
