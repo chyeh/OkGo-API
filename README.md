@@ -12,15 +12,15 @@ This API module provide APIs with parameters:
 
 3. `/attractions`
 
-	`place_id`: The `place_id` previous **Google place API**
+	`place_id`: The `place_id` provided by **Google place API**
 
 4. `/attractions/hotels`
 
 	`place_ids`: A set of `place_id` divided by `,`
 
-	`checkin`: A date in this format: `2017-06-07`
+	`checkin`: A date in this format `2017-06-07`
 
-	`checkout`: A date in this format: `2017-08-07`
+	`checkout`: A date in this format `2017-08-07`
 
 # Get and build the code
 
