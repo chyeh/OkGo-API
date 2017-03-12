@@ -61,6 +61,7 @@ type GetHotalAvailabilityParam struct {
 	Longitude float64 `url:"longitude,omitempty"`
 	Radius    string  `url:"radius,omitempty"`
 	Room1     string  `url:"room1,omitempty"`
+	Output    string  `url:"output,omitempty"`
 }
 
 func GetHotelsForAttractions(checkin string, checkout string, pIDs string) HotelAvailabilityV2 {
@@ -90,6 +91,7 @@ func GetHotelsForAttractions(checkin string, checkout string, pIDs string) Hotel
 				Longitude: avgLng,
 				Radius:    "5",
 				Room1:     "A",
+				Output:    "hotel_details",
 			}).
 			Request()
 
