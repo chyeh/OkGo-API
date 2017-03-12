@@ -27,6 +27,7 @@ func main() {
 	// :~)
 
 	config := confLoader.MustLoadConfigFile()
+	logger = log.NewDefaultLogger(config.GetString("logLevel"))
 
 	InitAPIConfig(toAPIConfig(config))
 	InitGin(toGinConfig(config))

@@ -113,7 +113,6 @@ func GetHotelsForAttractions(checkin string, checkout string, pIDs string) Hotel
 	if err != nil {
 		logger.Infoln("JSON decode error:", err)
 	}
-	logger.Debugf("%+v\n", hotelAv.Hotels)
 
 	return hotelAv
 }
